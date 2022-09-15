@@ -6,56 +6,56 @@
 </head>
 
 <body>
-    <center>
-        <div class="template">
-            <h1>Calculadora</h1>
+    <div class="template">
+        <h1>Calculadora</h1>
 
-            <script src="calculadora.js"></script>
-            <link rel="stylesheet" href="style.css">
+        <script src="calculadora.js"></script>
+        <link rel="stylesheet" href="style.css">
 
-            <div class="Display">
-                <div class="pantallaArriba">
-                    <div id="valorEnPantalla"></div>
-                    <div id="operacion"></div>
-                </div>
-                <div id="Resultado"></div>
+        <div class="Display">
+            <div class="pantallaArriba">
+                <div id="valorEnPantalla"></div>
+                <div id="operacion"></div>
             </div>
-
-            <div class="centrar">
-                <table class="matrix">
-
-                    <tr>
-                        <td colspan="4"><span id="botones"></span></td>
-                    </tr>
-                    <tr>
-                        <td><button id="siete" value=7 onclick="setNumber(this.value)">7</td>
-                        <td><button id="ocho" value=8 onclick="setNumber(this.value)">8</td>
-                        <td><button id="nueve" value=9 onclick="setNumber(this.value)">9</td>
-                        <td><button id="divison" value="/" onclick="operation(this.value)">/</td>
-                    </tr>
-                    <tr>
-                        <td><button id="cuatro" value=4 onclick="setNumber(this.value)">4</td>
-                        <td><button id="cinco" value=5 onclick="setNumber(this.value)">5</td>
-                        <td><button id="seis" value=6 onclick="setNumber(this.value)">6</td>
-                        <td><button id="multiplicacion" value="*" onclick="operation(this.value)">*</td>
-                    </tr>
-                    <tr class="fila2">
-                        <td><button id="uno" value=1 onclick="setNumber(this.value)">1</td>
-                        <td><button id="dos" value=2 onclick="setNumber(this.value)">2</td>
-                        <td><button id="tres" value=3 onclick="setNumber(this.value)">3</td>
-                        <td><button id="suma" value="+" onclick="operation(this.value)">+</td>
-                    </tr>
-                    <tr>
-                        <td><button id="igual" onclick="resultado()">=</td>
-                        <td><button id="cero" value=0 onclick="setNumber(this.value)">0</td>
-                        <td><button id="clear" onclick="clean()">C</td>
-                        <td><button id="resta" value="-" onclick="operation(this.value)">-</td>
-                    </tr>
-
-                </table>
-            </div>
+            <div id="Resultado"></div>
         </div>
-    </center>
-</body>
 
+        <div class="container">
+            <table class="matrix">
+
+                <tr>
+                    <td colspan="4"><span id="botones"></span></td>
+                </tr>
+                <tr>
+                    <td><button id="siete" value=7 onclick="setNumber(this.value)">7</td>
+                    <td><button id="ocho" value=8 onclick="setNumber(this.value)">8</td>
+                    <td><button id="nueve" value=9 onclick="setNumber(this.value)">9</td>
+                    <td><button id="divison" value="/" onclick="operation(this.value)">/</td>
+                </tr>
+                <tr>
+                    <td><button id="cuatro" value=4 onclick="setNumber(this.value)">4</td>
+                    <td><button id="cinco" value=5 onclick="setNumber(this.value)">5</td>
+                    <td><button id="seis" value=6 onclick="setNumber(this.value)">6</td>
+                    <td><button id="multiplicacion" value="*" onclick="operation(this.value)">*</td>
+                </tr>
+                <tr class="fila2">
+                    <td><button id="uno" value=1 onclick="setNumber(this.value)">1</td>
+                    <td><button id="dos" value=2 onclick="setNumber(this.value)">2</td>
+                    <td><button id="tres" value=3 onclick="setNumber(this.value)">3</td>
+                    <td><button id="suma" value="+" onclick="operation(this.value)">+</td>
+                </tr>
+                <tr>
+                    <td><button id="igual" onclick="resultado()">=</td>
+                    <td><button id="cero" value=0 onclick="setNumber(this.value)">0</td>
+                    <td><button id="clear" onclick="clean()">C</td>
+                    <td><button id="resta" value="-" onclick="operation(this.value)">-</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+<footer>
+    Hecho por Iván Vázquez
+</footer>
 </html>
